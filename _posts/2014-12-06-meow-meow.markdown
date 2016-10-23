@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "development waffle"
+date:   2014-12-06 13:37:00
+categories: dev
+---
+working with the carresoul
+<!--more-->
+meow roar meow
+hahaha
