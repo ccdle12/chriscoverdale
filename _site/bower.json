@@ -1,0 +1,22 @@
+{
+  "name": "chriscoverdale",
+  "homepage": "https://github.com/ccdle12/chriscoverdale",
+  "authors": [
+    "ccdle12 <chriscoverdale12@gmail.com>"
+  ],
+  "description": "personal website",
+  "main": "index.html",
+  "keywords": [
+    "personal",
+    "website",
+    "blog"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,103 +1,175 @@
----
-layout: default
----
-<header class="jumbotron">
-    <!-- Main component for a primary marketing message or call to action -->
-    <div class="container">
-        <div class="row row-header">
-            <div class="col-xs-12">
-                <h1 id="myName">Christopher Richard Coverdale</h1>
-            </div>
-        </div>
-    </div>
-</header>
+<!DOCTYPE html>
+<html lang="en" ng-app="myWebsite">
 
-<!-- About Me -->
-<div class="jumbotron jumbotron1" id="aboutMe">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head
+         content must come *after* these tags -->
+    <title>Christopher Coverdale</title>
+        <!-- Bootstrap -->
+<!-- build:css styles/main.css -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="styles/bootstrap-social.css" rel="stylesheet">
+    <link href="styles/mystyles.css" rel="stylesheet">
+<!-- endbuild -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-controller="IndexController">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Home</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                  <li><a href="#aboutMe">About</a></li>
+                  <li><a href="#myBlog">Blog</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="javascript:void(0)" onclick="openNav()">Portfolio</a></li>
+                  <li><a href="#education">Education</a></li>
+                  <li><a href="#connect">Connect</a></li>
+                  <li><a href="data/Christopher Richard Coverdale - June 2016.pdf" download="newfilename" target="_blank">Resume</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <header class="jumbotron">
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="container">
+          <div class="row row-header">
+              <div class="col-xs-12">
+                  <h1 id="myName">Christopher Richard Coverdale</h1>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <!-- About Me -->
+  <div class="jumbotron jumbotron1" id="aboutMe">
+    <div class="container">
+      <div class="row">
+        <h1>About me</h1>
+        <p>
+          Hello, I'm a self taught programmer.<br /> I enjoy programming, working on projects and improving my skills. <br />
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- END About Me -->
+
+  <!-- Skills -->
+  <div class="jumbotron jumbotron2" id="skills">
   <div class="container">
     <div class="row">
-      <h1>About me</h1>
+      <h1>Skills</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Java <br />Python <br /> SQL <br /> HTML/CSS/Javascript
+      </p>
+    </div> <!-- row -->
+  </div> <!-- container -->
+</div> <!-- jumbo tron -->
+  <!-- END Skills -->
+
+  <!-- What I am studying -->
+  <div class="jumbotron jumbotron1" id="education">
+  <div class="container">
+    <div class="row">
+      <h1>Education</h1>
+      <p>
+        What I am studying?
       </p>
     </div>
   </div>
 </div>
-<!-- END About Me -->
+  <!-- END What I am Studying -->
 
-<!-- Skills -->
-<div class="jumbotron jumbotron2" id="skills">
-<div class="container">
-  <div class="row">
-    <h1>Skills</h1>
-    <p>
-      Skills
-    </p>
-  </div> <!-- row -->
-</div> <!-- container -->
-</div> <!-- jumbo tron -->
-<!-- END Skills -->
-
-<!-- What I am studying -->
-<div class="jumbotron jumbotron1" id="education">
-<div class="container">
-  <div class="row">
-    <h1>Education</h1>
-    <p>
-      What I am studying?
-    </p>
+  <!-- Blog Link -->
+  <div class="jumbotron jumbotron2" id="myBlog">
+  <div class="container">
+    <div class="row">
+      <h1>My Blog</h1>
+      <p>
+        My Blog
+      </p>
+    </div>
   </div>
 </div>
-</div>
-<!-- END What I am Studying -->
+  <!-- END Blog Link -->
 
-<!-- Blog Link -->
-<div class="jumbotron jumbotron2" id="myBlog">
-<div class="container">
-  <div class="row">
-    <h1>My Blog</h1>
-    <p>
-      My Blog
-    </p>
+  <!-- Connect with me -->
+  <div class="jumbotron jumbotron1" id="connect">
+  <div class="container">
+    <div class="row">
+      <h1>Connect</h1>
+      <p>
+        Connect
+      </p>
+    <div>
+        <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/christopher-coverdale-7b145022" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a class="btn btn-social-icon btn-github" href="https://github.com/ccdle12" target="_blank"><i class="fa fa-github"></i></a>
+    </div>
+    </div>
   </div>
 </div>
-</div>
-<!-- END Blog Link -->
+  <!-- END Connect with me -->
 
-<!-- Connect with me -->
-<div class="jumbotron jumbotron1" id="connect">
-<div class="container">
-  <div class="row">
-    <h1>Connect</h1>
-    <p>
-      Connect
-    </p>
-  <div>
-      <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/christopher-coverdale-7b145022" target="_blank"><i class="fa fa-linkedin"></i></a>
-      <a class="btn btn-social-icon btn-github" href="https://github.com/ccdle12" target="_blank"><i class="fa fa-github"></i></a>
+  <!-- Project Side Nav Bar Links -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" onclick="closeNav()" float="right">&times;</a>
+    <!-- <a href="#">About</a> -->
+    <a href="https://ccdle12.github.io/Value-Stock-Screener/" target="_blank" class="pull-left"><h1>"Value" Stock Screener</h1>
+    <h4>"Inspired by Peter Lynches "One up on Wall Street" - A stock screener that helps find "under valued" stocks.<br /><br />
+    Python / SQL / HTML/CSS/Javascript / AngularJS / Gulp / Bower </h4></a><img src="./images/images.png" />
+    <hr />
+    <a href="https://ccdle12.github.io/Software-Developer-Jobs-Cluster/" target="_blank"><h1>Software Jobs - Data Visiulization</h1>
+    <h4>"Software Developer" jobs scrapped from job websites and represented as a cluster on Google maps API.<br />
+    Python / SQL</h4></a>
+    <a href="https://github.com/ccdle12/Calculator" target="_blank"><h1>Java Calculator</h1><h4>A mini "sprint" challenge for myself to create a working calculator + GUI in 4 hours.<br />
+    Java / Swing Framework / Eclipse IDE</h4></a>
+    <span><a href="https://github.com/ccdle12/Hangman-Game" target="_blank"><h1>Python Hangman Game</h1><h4>An early project, fun and simple text-based game.<br />
+    Python</h4></a><div src="images/images.png"></div></span>
+    <a href="https://github.com/ccdle12/Guessing-Game" target="_blank"><h1>Guessing Game</h1><h4>An early project, a simple Guessing Game generating psuedo-random numbers + GUI.<br />
+    Python / Tkinter</h4></a>
   </div>
-  </div>
-</div>
-</div>
-<!-- END Connect with me -->
+  <!-- END Project Side Nav Bar Links -->
 
-<!-- Blog Link -->
-<div class="jumbotron jumbotron2" id="getInTouch">
-<div class="container">
-  <div class="row">
-    <h1>Get in Touch</h1>
-    <p>
-      Get in Touch
-    </p>
-  </div>
-</div>
-</div>
-<!-- END Blog Link -->
 
-<!-- Project Side Nav Bar Links -->
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" onclick="closeNav()" float="right">&times;</a>
-  <!-- <a href="#">About</a> -->
-  <a href="#"><h1>Stock Screener</h1><p>A stock Screener for finding value stocks</p></a>
+    <footer class="row-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p style="padding:10px;"></p>
+                    <p align=center>© Copyright 2016 Christopher Coverdale</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-</div>
+<!-- build:js scripts/main.js -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="scripts/js_syntax.js"></script>
+<!-- endbuild -->
+</body>
+
+</html>
